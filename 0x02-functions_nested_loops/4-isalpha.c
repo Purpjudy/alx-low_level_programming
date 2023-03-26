@@ -3,22 +3,21 @@
 /**
  * main - check the code for ALX School students
  *
- * Return: Always 0 (Success)
-*/
-
-int main(void)
+ * Return: Always 0
+ */
+int _isalpha(int c)
 {
-	int r;
+	char lower, upper;
+	int isletter = 0;
 
-	r = _isalpha('H');
-	_putchar(r + '0');
-	r = _isalpha('o');
-	_putchar(r + '0');
-	r = _isalpha(108);
-	_putchar(r + '0');
-	r = _isalpha(';');
-	_putchar(r + '0');
-	_putchar('\n');
-	return (0);
+	for (lower = 'a'; lower <= 'z'; lower++)
+	{
+		for (upper = 'A'; upper <= 'Z'; upper++)
+		{
+			if (c == lower || c == upper)
+				isletter = 1;
+		}
+	}
+	return (isletter);
 }
 

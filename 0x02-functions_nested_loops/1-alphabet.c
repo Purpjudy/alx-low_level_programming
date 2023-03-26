@@ -5,11 +5,13 @@
  *
  * Description: check the code for ALX School students
  *
- * Return: Always 0 (Success)
-*/
-
-int main(void)
+ * Return: Alway
+ */
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char i;
+
+	for (i = 'a'; i <= 'z'; i++)
+		_putchar(i);
+	_putchar('\n');
 }
