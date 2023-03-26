@@ -1,15 +1,18 @@
-#include"../main.h"
-#include<stdio.h>
-
+#include "main.h"
 
 /**
- * main - check the code for ALX School students.
- *
- * Return: Always 0 (Success)
-*/
-
+ * add - adds two integers and returns the result
+ * @a: int to be added to b
+ * @b: int to be added to a
+ * Return: sum of a and b
+ */
 int add(int a, int b)
 {
-	return (a + b);
+	int c;
+
+	c = a + b;
+
+	return (c);
 }
+
 
