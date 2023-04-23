@@ -1,20 +1,16 @@
-#include"../main.h"
+#include "main.h"
 
 /**
- * main - check the code for ALX School Students
- *
- * Return: Always 0 (Success)
-*/
+ * _islower - check if char is lowercase
+ * @c: is the char to be checked
+ * Return: 1 if char is lowercase, otherwise 0.
+ */
+
 int _islower(int c)
 {
-	char i;
-	int lower = 0;
-
-	for (i = 'a'; i <= 'z'; i++)
-	{
-		if (i == c)
-			lower = 1;
-	}
-
-	return (lower);
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	else
+		return (0);
 }
+

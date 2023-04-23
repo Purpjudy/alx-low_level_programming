@@ -1,16 +1,17 @@
-#include"../main.h"
+
+#include "main.h"
 
 /**
- * main - check the code for ALX School students.
- *
- * Return: Always 0 (Success)
-*/
-
-int _abs(int r)
+ * _abs - computes the absolute value of an integer
+ * @n: the int to check
+ * Return: the absolute value of int
+ */
+int _abs(int n)
 {
-	if (r >= 0)
-		return (r);
-	else
-		return (r * -1);
+	if (n >= 0)
+	{
+		return (n);
+	}
+	return (-n);
 }
 
